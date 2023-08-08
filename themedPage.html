@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Customer Preferences</title>
+<style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    h1 {
+      margin: 30px 0;
+    }
+    .button-container {
+      margin: 20px 0;
+    }
+    .theme-button {
+      background-color: #e50914;
+      border: none;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      margin: 5px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Select your theme</h1>
+  <div class="button-container">
+    <button class="theme-button" onclick="changeTheme('Mountain')">Mountain</button>
+    <button class="theme-button" onclick="changeTheme('Desert')">Desert</button>
+    <button class="theme-button" onclick="changeTheme('River')">River</button>
+  </div>
+
+  <script>
+    function changeTheme(theme) {
+      // Change the homepage's background image based on the selected theme
+      if (theme === "Mountain") {
+        document.body.style.backgroundImage = "url('mountain-min.jpg')";
+      } else if (theme === "Desert") {
+        document.body.style.backgroundImage = "url('desert-min.jpg')";
+      } else if (theme === "River") {
+        document.body.style.backgroundImage = "url('river-min.jpg')";
+      }
+    }
+  </script>
+</body>
+</html>

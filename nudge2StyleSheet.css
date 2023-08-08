@@ -1,0 +1,64 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #111;
+  color: #fff;
+  margin: 0;
+}
+
+.movie-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+  padding-top: 50px;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: transform 0.2s;
+  opacity: 0.6; /* Initial opacity */
+  border: 2px solid #fff; /* Add white border */
+}
+
+.container:hover {
+  opacity: 1; /* Full opacity on hover */
+}
+
+.container h2 {
+  color: #fff;
+  font-size: 32px;
+}
+
+
+.container.romance h2 {
+  color: #000; /* Change text color for the Light theme */
+}
+
+.action {
+  background-image: url('action.jpg'); /* Replace with your dark theme image */
+}
+
+.romance {
+  background-image: url('romance.jpg'); /* Replace with your retro theme image */
+}
+
+.thriller {
+  background-image: url('thriller.jpg'); /* Replace with your punk theme image */
+}
+
+.horror {
+  background-image: url('horror.jpg'); /* Replace with your light theme image */
+}
+
+/* Add more styles for other themes if needed */

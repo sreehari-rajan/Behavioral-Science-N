@@ -1,0 +1,67 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #111;
+  color: #fff;
+  margin: 0;
+}
+
+.theme-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+  padding-top: 50px;
+  box-sizing: border-box;
+}
+
+.theme {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: transform 0.2s;
+  opacity: 0.6; /* Initial opacity */
+  border: 2px solid #fff; /* Add white border */
+}
+
+.theme:hover {
+  opacity: 1; /* Full opacity on hover */
+}
+
+.theme h2 {
+  color: #fff;
+  font-size: 32px;
+}
+
+.theme.light h2 {
+  color: #000; /* Change text color for the Light theme */
+}
+
+.theme.retro h2 {
+  color: #820000; /* Change text color for the Light theme */
+}
+
+.dark {
+  background-image: url('dark.avif'); /* Replace with your dark theme image */
+}
+
+.retro {
+  background-image: url('retro.avif'); /* Replace with your retro theme image */
+}
+
+.country {
+  background-image: url('country.jpg'); /* Replace with your punk theme image */
+}
+
+.light {
+  background-image: url('light.webp'); /* Replace with your light theme image */
+}
+
+/* Add more styles for other themes if needed */
